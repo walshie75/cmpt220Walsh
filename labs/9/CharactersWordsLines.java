@@ -24,7 +24,7 @@ public class CharactersWordsLines {
 			linesCount++;
 			String[] words = line.split(" ");
 			wordsCount += words.length;
-			for (String token : words ) { 
+			for (String token : words ) { // JA: This skips the spaces, which should also count
 				charactersCount += token.length(); 
 			}
 		}
